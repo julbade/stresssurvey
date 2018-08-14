@@ -1,16 +1,19 @@
 $(document).ready(function(){
-  $("form#transportation_survey").submit(function(event){
+  $("form#stress_survey").submit(function(event){
     event.preventDefault();
     $("#work-responses").show();
-    $("input:checkbox[name=work-transportation]:checked").each(function(){
-      var workTransportationMode = $(this).val();
-      $('#work-responses').append(workTransportationMode + "<br>");
+    $("input:checkbox[name=work-stress]:checked").each(function(){
+      var workStress = $(this).val();
+      $('#work-responses').append(workStress + "<br>");
     });
-    $("#fun-responses").show();
-    $("input:checkbox[name=fun-transportation]:checked").each(function(){
-      var funTransportationMode = $(this).val();
-      $('#fun-responses').append(funTransportationMode + "<br>");
+    $("#health-responses").show();
+    $("input:checkbox[name=health-stress]:checked").each(function(){
+      var healthStress = $(this).val();
+      $('#health-responses').append(healthStress + "<br>");
+
+
+
     });
-    $('#transportation_survey').hide();
+    $('#stress_survey').hide();
   });
 });

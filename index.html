@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Transportation Survey</title>
+    <title>Stress Survey</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery.js"></script>
@@ -10,51 +10,45 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h2>Transportation Survey</h2>
+        <h2>Stress Survey</h2>
       </div>
-      <form id="transportation_survey">
+      <form id="stress_survey">
+        <div class="row">
         <div class="form-group">
-          <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
-          <input type="checkbox" name="work-transportation" value="bike"> Riding a bike.<br>
-          <input type="checkbox" name="work-transportation" value="car">Driving a car.<br>
-          <input type="checkbox" name="work-transportation" value="carpool">Carpooling with others.<br>
-          <input type="checkbox" name="work-transportation" value="walk">Walking.<br>
-          <input type="checkbox" name="work-transportation" value="bus">Riding the bus.<br>
-          <input type="checkbox" name="work-transportation" value="train">Riding the train.<br>
-          <input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.<br>
-          <input type="checkbox" name="work-transportation" value="taxi">Taking a taxi.<br>
-          <input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
-          <input type="checkbox" name="work-transportation" value="skateboard">Skateboarding.<br>
-          <input type="checkbox" name="work-transportation" value="rollerblade">Rollerblading.<br>
-          <input type="checkbox" name="work-transportation" value="scooter">Riding a scooter.<br>
-          <input type="checkbox" name="work-transportation" value="other">Another mode of transportation not listed here.<br>
+          <div class="col-md-12">
+            <div class="panel panel-warning">
+          <div class="panel-heading"><h2>Warning signs of stress:</h2></div>
+          <input type="checkbox" name="work-stress" value="sleep">Lack of Sleep.<br>
+          <input type="checkbox" name="work-stress" value="angry">Agitation.<br>
+          <input type="checkbox" name="work-stress" value="weak">Chest Pain.<br>
+          <input type="checkbox" name="work-stress" value="nauseous">Feeling Nauseous.<br>
+          <input type="checkbox" name="work-stress" value="dehydrated">Head-Ache/Dehydrated.<br>
         </div>
+      </div>
         <hr>
         <div class="form-group">
-          <p>In the past year, I have used the following modes of transportation to travel to other activities and events:</p>
-          <input type="checkbox" name="fun-transportation" value="bike"> Riding a bike.<br>
-          <input type="checkbox" name="fun-transportation" value="car">Driving a car.<br>
-          <input type="checkbox" name="fun-transportation" value="carpool">Carpooling with others.<br>
-          <input type="checkbox" name="fun-transportation" value="walk">Walking.<br>
-          <input type="checkbox" name="fun-transportation" value="bus">Riding the bus.<br>
-          <input type="checkbox" name="fun-transportation" value="train">Riding the train.<br>
-          <input type="checkbox" name="fun-transportation" value="streetcar">Riding the streetcar.<br>
-          <input type="checkbox" name="fun-transportation" value="taxi">Taking a taxi.<br>
-          <input type="checkbox" name="fun-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.<br>
-          <input type="checkbox" name="fun-transportation" value="skateboard">Skateboarding.<br>
-          <input type="checkbox" name="fun-transportation" value="rollerblade">Rollerblading.<br>
-          <input type="checkbox" name="fun-transportation" value="scooter">Riding a scooter.<br>
-          <input type="checkbox" name="fun-transportation" value="other">Another mode of transportation not listed here.<br>
-        </div>
+          <div class="col-md-12">
+            <div class="panel panel-danger">
+              <div class="panel-heading"><h2>Health Related Stress</h2></div>
+          <input type="checkbox" name="health-stress" value="high blood pressure"> High Blood Pressure<br>
+          <input type="checkbox" name="health-stress" value="Fever">Fever.<br>
+          <input type="checkbox" name="health-stress" value="Anxiety/Paranoid">Anxiety/Paranoia.<br>
+          <input type="checkbox" name="health-stress" value="Diarrhea">Diarrhea<br>
+          <input type="checkbox" name="health-stress" value="Cold">Cold/Cough.<br>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
        <button type="submit">Submit Survey</button>
       </form>
       <hr>
       <span id="work-responses">
-        <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+        <p><b>You choose the following options:</b></p>
       </span>
-      <br>
-      <span id="fun-responses">
-        <p><b>You use the following methods of transportation to travel to other activities and events:</b></p>
+      <hr>
+      <span id="health-responses">
+        <p><b>These are the symptoms of:</b></p>
       </span>
     </div>
   </body>
