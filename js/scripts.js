@@ -10,10 +10,13 @@ $(document).ready(function(){
     $("input:checkbox[name=health-stress]:checked").each(function(){
       var healthStress = $(this).val();
       $('#health-responses').append(healthStress + "<br>");
-
-
-
     });
-    $('#stress_survey').hide();
+    $("#coping-method").show();
+    $("input:checkbox[name=coping-method]:checked").each(function(){
+        var copingMethod = $(this).val();
+        $('#coping-method').append(copingMethod + "<br>");
+    });
+    // $('#stress_survey').hide();
+
   });
 });

@@ -1,12 +1,17 @@
-#work-responses {
+#work-responses, #health-responses, #coping-method {
   display: none;
 }
 
-#health-responses {
-  display: none;
+
+
 }
 
 h1 {
   text-align: center;
 
+}
+
+p {
+  color: Brown;
+  font-weight: bold;
 }
