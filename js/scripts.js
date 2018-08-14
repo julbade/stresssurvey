@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $("form#stress_survey").submit(function(event){
     event.preventDefault();
+
     $("#work-responses").show();
     $("input:checkbox[name=work-stress]:checked").each(function(){
       var workStress = $(this).val();
@@ -16,7 +17,8 @@ $(document).ready(function(){
         var copingMethod = $(this).val();
         $('#coping-method').append(copingMethod + "<br>");
     });
-    // $('#stress_survey').hide();
+
+    $("#stress_survey").hide();
 
   });
 });
